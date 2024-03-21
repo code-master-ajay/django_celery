@@ -37,5 +37,5 @@ jobs:
         script: |
           cd django_celery
           git pull origin master
-          systemctl restart gunicorn.service
-          systemctl restart nginx
+          sudo systemctl restart gunicorn.service
+          sudo systemctl restart nginx
